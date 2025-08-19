@@ -9,3 +9,11 @@ To utilize this:
 3. Create a sub-folder inside `upsnap`, named `ts-upsnap`
 4. Inside `ts-upsnap`, create folders `state` and `config`
 5. If you want to access UpSnap from a single URL with no port number, as its own Tailscale node, place `upsnap.json` inside the `config` folder.
+
+With those pieces in place, from the `upsnap` folder, run:
+`docker compose up -d`
+
+This should pull and start the container images for UpSnap and Tailscale, and (if you set it up) use `upsnap.json` to configure your container with [Tailscale serve](https://tailscale.com/kb/1242/tailscale-serve).
+
+To check for Tailscale errors and issues, run:
+`docker exec -it ts-upsnap tailscale status`
