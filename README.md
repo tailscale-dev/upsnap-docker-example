@@ -1,5 +1,7 @@
 # upsnap-docker-example
-Example of a docker compose file and Serve configuration for [UpSnap](https://github.com/seriousm4x/UpSnap/tree/master) that adds Tailscale connectivity as a "sidecar." See our [blog post](https://tailscale.com/blog/docker-tailscale-guide) or [YouTube video guide](https://www.youtube.com/watch?v=tqvvZhGrciQ) for more details and examples on configuring Tailscale inside containers.
+Example of a docker compose file and Serve configuration for [UpSnap](https://github.com/seriousm4x/UpSnap/tree/master) that adds Tailscale connectivity as a "sidecar." Created as part of the blog post: [Make a dedicated Wake-on-LAN server with Tailscale](https://tailscale.com/blog/wake-on-lan-tailscale-upsnap).
+
+See our [blog post on Docker](https://tailscale.com/blog/docker-tailscale-guide) or [YouTube video guide](https://www.youtube.com/watch?v=tqvvZhGrciQ) for more details and examples on configuring Tailscale inside containers.
 
 To utilize this:
 1. Create a folder on the hosting system named `upsnap`
